@@ -474,7 +474,7 @@ if (typeof(PhpDebugBar) == 'undefined') {
                             for (var key in measure.params) {
                                 if (typeof measure.params[key] !== 'function') {
                                     table.append('<tr><td class="' + csscls('name') + '">' + key + '</td><td class="' + csscls('value') +
-                                    '"><pre><code>' + measure.params[key] + '</code></pre></td></tr>');
+                                    '"><pre><button class="btn" onclick="WATABASE.watabase_jsf_copy_next_code_sibling_to_clipboard(this)">✂️</button><br/><code>' + measure.params[key] + '</code></pre></td></tr>');
                                 }
                             }
                             li.css('cursor', 'pointer').click(function() {
